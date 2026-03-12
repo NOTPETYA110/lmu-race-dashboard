@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import { parseRaceData, type RaceData } from '../parser'
 
-const PROXY_URL = '/api/races'
+const PROXY_URL = 'https://lmu-proxy.rnlnortherns.workers.dev/'
 const REFRESH_INTERVAL = 60_000
 
 export function useRaceData() {
