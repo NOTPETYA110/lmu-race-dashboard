@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0a0a0f;
+  --color-card: #12121a;
+  --color-card-border: #1e1e2e;
+  --color-bronze: #cd7f32;
+  --color-silver: #c0c0c0;
+  --color-gold: #ffd700;
+  --color-platinum: #e5e4e2;
+  --color-neon: #00ff88;
+  --color-neon-dim: #00ff8833;
+  --color-text: #e0e0e0;
+  --color-text-dim: #888888;
+  --color-danger: #ff4444;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  min-height: 100vh;
+}
+
+.glow-neon {
+  text-shadow: 0 0 10px var(--color-neon), 0 0 20px var(--color-neon-dim);
+}
+
+.glow-bronze { box-shadow: 0 0 12px #cd7f3244, inset 0 0 12px #cd7f3211; }
+.glow-silver { box-shadow: 0 0 12px #c0c0c044, inset 0 0 12px #c0c0c011; }
+.glow-gold { box-shadow: 0 0 12px #ffd70044, inset 0 0 12px #ffd70011; }
+.glow-platinum { box-shadow: 0 0 12px #e5e4e244, inset 0 0 12px #e5e4e211; }
+
+@keyframes pulse-neon {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.animate-pulse-neon {
+  animation: pulse-neon 2s ease-in-out infinite;
+}
+
+.countdown-live {
+  font-variant-numeric: tabular-nums;
+}

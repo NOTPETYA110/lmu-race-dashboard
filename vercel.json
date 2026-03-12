@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/races",
+      "destination": "https://lmu-proxy.rnlnortherns.workers.dev/"
+    }
+  ]
+}
