@@ -12,11 +12,6 @@ const TIER_CONFIG: Record<Tier, { label: string; rank: string; color: string; gl
 
 type Filter = Tier | 'all'
 
-function getNextTime(times: Date[]): Date | null {
-  const now = new Date()
-  return times.find(t => t > now) ?? null
-}
-
 function getNextRaceAcrossAll(races: Race[]): { race: Race; time: Date } | null {
   const now = new Date()
   let best: { race: Race; time: Date } | null = null
